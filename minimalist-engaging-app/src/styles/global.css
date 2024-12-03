@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%; /* Ensure the body and HTML fill the viewport */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.app {
+  text-align: center;
+}
+main {
+  padding: 20px;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.content {
+  flex: 1; /* Expand to fill available space between header and footer */
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+/* General Responsive Styles */
+html,
+body {
+  font-size: 16px;
+}
+
+.content {
+  padding: 10px;
+}
+
+/* Media Query for 320px width */
+@media (max-width: 320px) {
+  .header {
+    font-size: 14px; /* Smaller font size for header */
+    padding: 5px 0;
+    width: 100%;
+  }
+
+  .content {
+    padding: 5px; /* Reduce padding for content */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .footer {
+    font-size: 12px; /* Smaller footer text */
+    padding: 5px 0; /* Reduce footer padding */
+  }
+
+  button {
+    font-size: 12px; /* Adjust button text */
+    padding: 5px 10px; /* Adjust button size */
+  }
+
+  .item {
+    font-size: 14px; /* Adjust item font size */
+  }
+}
+
+/* Media Query for 400px height */
+@media (max-height: 400px) {
+  .header {
+    font-size: 12px; /* Adjust font size for smaller height */
+  }
+
+  .content {
+    font-size: 12px; /* Adjust content font */
+    padding: 5px; /* Reduce padding */
+  }
+
+  .footer {
+    font-size: 10px; /* Adjust footer font size */
+    padding: 5px 0;
+  }
+
+  button {
+    padding: 4px 8px; /* Further adjust button size */
+  }
+}
